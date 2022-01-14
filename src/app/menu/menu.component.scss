@@ -1,0 +1,35 @@
+.container {
+    padding-top: 120px;
+}
+.menu {
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-top: 15%;
+    width: 50%;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+span {
+    width: 50%;
+    margin: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+}
+
+span:hover{
+    a {
+        color: white;
+    }
+    background-color: orange;
+}

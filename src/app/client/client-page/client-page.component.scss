@@ -1,0 +1,34 @@
+section {
+    margin-top: 20px;
+}
+.chercher {
+    display: flex;
+    justify-content: space-between;
+    button {
+        margin-left: 8px;
+    }
+    a {
+        cursor: pointer;
+    }
+}
+
+.table tbody a {
+   cursor: pointer;
+}
+.content {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.content span a{
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content span {
+    :hover {
+        background-color: orange;
+        color: white;
+    }
+}

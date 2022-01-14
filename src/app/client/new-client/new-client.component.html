@@ -1,0 +1,65 @@
+<div class="top fixed-top bg-primary">
+    <h2>Création d'un nouveau client!</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <form [formGroup]="clientForm" (ngSubmit)="onAddClient()">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" class="form-control" 
+                            formControlName="nom"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" id="prenom" class="form-control" 
+                            formControlName="prenom"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="adresse">Adresse</label>
+                        <input type="text" id="adresse" class="form-control" 
+                            formControlName="adresse"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="id" class="form-control" 
+                            formControlName="email"
+                        >
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="job">Job</label>
+                        <input type="text" id="job" class="form-control" 
+                            formControlName="job"
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="dateCreation">Date compte</label>
+                        <input type="date" id="dateCreation" class="form-control" 
+                            formControlName="dateCreation"
+                        />
+                    </div>
+                </div>
+            </div>
+            <button [disabled]="clientForm.invalid" class="btn btn-primary" style="margin-top: 10px;">Enregistrer</button>
+        </form>
+    </div>
+</div>
+<div class="fixed-bottom bg-primary" style="height: 150px;">
+    <div class="container" style="margin-top: 50px; text-align: center;">
+        <h3><a routerLink="/menu" style="color: white; text-decoration: none;">BACK</a></h3>
+    </div>
+</div>
